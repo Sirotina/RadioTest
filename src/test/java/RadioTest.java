@@ -16,11 +16,11 @@ public class RadioTest {
     }
 
     @Test
-    public void ShouldSetTenStation() {
+    public void ShouldSetFourStation() {
         Radio radio = new Radio();
-        radio.setCurrentRadioStation(10);
+        radio.setCurrentRadioStation(4);
 
-        int expected = 0;
+        int expected = 4;
         int actual = radio.getCurrentRadioStation();
         Assertions.assertEquals(expected, actual);
 
