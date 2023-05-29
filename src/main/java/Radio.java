@@ -40,10 +40,10 @@ public class Radio {
     }
 
     public void setCurrentVolume(int currentVolume) {
-        if (currentRadioStation < 0) {
+        if (currentVolume < 0) {
             return;
         }
-        if (currentRadioStation > 10) {
+        if (currentVolume > 10) {
             return;
         }
         this.currentVolume = currentVolume;
