@@ -740,6 +740,41 @@ public class RadioTest {
 
     }
 
+    @Test
+    public void ShouldSetCurrentRadioStation30() {
+        Radio radio = new Radio(30);
+        radio.setCurrentRadioStation(29);
+
+        int expected = 29;
+        int actual = radio.getCurrentRadioStation();
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void ShouldSetCurrentRadioStation15() {
+        Radio radio = new Radio(15);
+        radio.setCurrentRadioStation(14);
+
+        int expected = 14;
+        int actual = radio.getCurrentRadioStation();
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void ShouldSetCurrentRadioStation25() {
+        Radio radio = new Radio(25);
+        radio.setCurrentRadioStation(24);
+
+        int expected = 24;
+        int actual = radio.getCurrentRadioStation();
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+
+
 
 
 }
